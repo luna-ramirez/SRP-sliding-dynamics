@@ -1,0 +1,30 @@
+# Trajectories / large MD outputs — never commit
+*.xtc
+*.trr
+*.cpt
+*.tpr
+*.edr
+*.log
+COLVAR
+STATE
+KERNELS
+WALLS
+*_offsets.npz
+*.npz
+
+# Analysis / figure outputs
+*.png
+*.out
+fes-rew*.dat
+convergence_log.txt
+
+# GROMACS backups & scratch
+\#*\#
+mdout.mdp
+*_prev.cpt
+step*.pdb
+
+# OS / editor cruft
+.DS_Store
+*.lock
+.ipynb_checkpoints/

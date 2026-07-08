@@ -1,0 +1,20 @@
+#include "../../../../../forcefield/gaff2.itp" ;general ff
+
+
+;include PEG potential
+#include "../../../../../forcefield/PEG_30_c_GMX.itp" ;Include the PEG ff
+
+;include CD potential
+#include "../../../../../forcefield/MOL_aCD-OH.itp"
+
+;include water tip3p
+#include "../../../../../forcefield/tip3p.itp"
+
+[ system ]
+2aCDOH_1PEG_l8
+
+[ molecules ]
+; Compound        nmols
+PEG           1
+MOL            2
+SOL              7229
